@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="routing_packets">正在路由网络数据包…</string>
+    <string name="stop">停止</string>
+</resources>
