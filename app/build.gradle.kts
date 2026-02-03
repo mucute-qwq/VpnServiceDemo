@@ -1,49 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "io.githun.mucute.qwq.kolomitm.vpnservicedemo"
-
-    defaultConfig {
-        applicationId = "io.githun.mucute.qwq.kolomitm.vpnservicedemo"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    signingConfigs {
-        create("shared") {
-            storeFile = file("../buildKey.jks")
-            storePassword = "123456"
-            keyAlias = "VpnServiceDemo"
-            keyPassword = "123456"
-            enableV1Signing = true
-            enableV2Signing = true
-            enableV3Signing = true
-        }
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            signingConfig = signingConfigs["shared"]
-            proguardFiles("proguard-rules.pro")
-        }
-        debug {
-            isMinifyEnabled = false
-            signingConfig = signingConfigs["shared"]
-            proguardFiles("proguard-rules.pro")
-        }
-    }
-
-    buildFeatures {
-        compose = true
-    }
-
-    packaging {
-        resources.excludes += setOf("DebugProbesKt.bin")
-    }
 }
 
 dependencies {
