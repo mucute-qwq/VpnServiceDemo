@@ -3,9 +3,9 @@ import org.gradle.api.JavaVersion
 @Suppress("ConstPropertyName")
 object Versions {
 
-    const val buildToolsVersion = "36.0.0"
-    const val compileSdkVersion = 36
-    const val targetSdkVersion = 36
+    const val buildToolsVersion = "37.0.0"
+    const val compileSdkVersion = 37
+    const val targetSdkVersion = 37
     const val minSdkVersion = 28
     const val versionCode = 1
     const val versionName = "1.0.0"
